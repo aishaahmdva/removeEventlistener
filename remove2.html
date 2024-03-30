@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        button{
+            line-height: 30px;
+            background-color: lime;
+            border: none;
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="goy">goy</button>
+    <button id="qirmizi" >qirmizi</button>
+    <button id="yasil" >yasil</button><br><br>
+
+    <a href="https://www.youtube.com">
+        YOUTUBE
+    </a>
+
+    <script>
+
+
+const goyBtn =document.getElementById('goy');
+const qirmiziBtn =document.getElementById('qirmizi');
+const yasilBtn =document.getElementById('yasil');
+
+        
+        goyBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            goyBtn.style.backgroundColor = 'blue';
+        
+        })
+        qirmiziBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            qirmizi.style.backgroundColor = 'red';
+        
+        })
+
+        yasilBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            yasilBtn.style.backgroundColor = 'green';
+        
+        })
+
+
+    </script>
+    
+</body>
+</html>

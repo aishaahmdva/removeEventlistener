@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        button{
+            line-height: 30px;
+            background-color: lime;
+            border: none;
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="overlay">
+
+    <button id="btn">Shamaxi</button>
+</div>
+
+    <button>Sabirabad</button>
+    <button>Baki</button><br><br>
+
+
+    <a href="https://www.youtube.com">
+        YOUTUBE
+    </a>
+
+    <script>
+
+//   const btn = document.querySelector('button');
+  
+//   const deleteElement = (e) =>{
+//     console.log(e.target);
+//   }
+
+// btn.addEventListener('click', deleteElement,{once: true});
+
+const btns = document.querySelectorAll('button');
+  
+  const deleteElement = (e) =>{
+    console.log(e.currentTarget);
+  }
+  btns.forEach(btn => {
+    btn.addEventListener('click',deleteElement,{once: true});
+  });
+
+btn.addEventListener('click', deleteElement,{once: true});
+
+
+    </script>
+    
+</body>
+</html>
